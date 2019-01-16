@@ -6,9 +6,9 @@ Variables
 :root {
 /*Colors:*/
     --title-col: rgb(2, 46, 112); 
-    --titel-bgcol: rgb(154, 237, 237);
-    --tab-bgcol: rgb(153, 193, 252);
-    --page-pgcol: rgb(220, 242, 239);
+    --titel-bgcol: rgb(201, 228, 252);
+    --tab-bgcol: rgb(114, 187, 255);
+    --page-pgcol: rgb(229, 241, 252);
 }
 
 body {
