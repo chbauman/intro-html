@@ -29,11 +29,13 @@ body:after {
     font-size: 10pt;
 }
 
+/*
 div {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
 }
+*/
 
 #fb-like {
     width: 10px;
