@@ -4,15 +4,18 @@
 Variables
 */
 :root {
-    --title-col: rgb(104, 85, 57); 
+/*Colors:*/
+    --title-col: rgb(2, 46, 112); 
+    --titel-bgcol: rgb(154, 237, 237);
+    --tab-bgcol: rgb(153, 193, 252);
+    --page-pgcol: rgb(220, 242, 239);
 }
 
 body {
     padding: 0px;
     margin: 0px;
-    background: #e9e9e9;
+    background: var(--page-pgcol);
     font-family: 'Open Sans', sans-serif;
-    color: #000;
 }
 
 body:after {
@@ -32,21 +35,26 @@ div {
     top: 0;
 }
 
+#fb-like {
+    width: 10px;
+    
+}
+
 #tabs {
     padding-bottom: 20px;
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 200px 200px 1fr;
 }
 
 #tab {
     margin-left: -5px;
     padding: 10px;
     padding-left: 20px;
-    background-color: rgb(104, 185, 157);
+    background-color: var(--tab-bgcol);
     border-bottom-right-radius: 20px;
     border-style: solid;
-    border-color: red;
+    border-color: var(--title-col);
 }
 
 h1 {    
@@ -55,7 +63,7 @@ h1 {
     color: var(--title-col);
     font-size: 48pt;
     font-family: 'Playfair Display', sans-serif;
-    background-color: rgb(104, 245, 217)
+    background-color: var(--titel-bgcol)
 }
 
 #underlh1 {
