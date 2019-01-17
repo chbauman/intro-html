@@ -19,6 +19,7 @@ body {
     
     padding: 0px;
     margin: 0px;
+    margin-bottom: 400px;
     background: var(--page-pgcol);
     font-family: 'Open Sans', sans-serif;
 }
@@ -50,7 +51,7 @@ div {
 
 .prod {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 40% 60%;
 }
 
 .right {
