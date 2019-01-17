@@ -37,7 +37,8 @@ body:after {
 
 #everything {
     position: relative;
-    left: 100px
+    left: 10%;
+    width: 80%;
 }
 
 
