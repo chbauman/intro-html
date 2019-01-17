@@ -9,9 +9,14 @@ Variables
     --titel-bgcol: rgb(201, 228, 252);
     --tab-bgcol: rgb(114, 187, 255);
     --page-pgcol: rgb(229, 241, 252);
+    
+/*Sizes*/
+    --ul-height: 10px;
+    --tab-fwid: 300px
 }
 
 body {
+    left: 50px;
     padding: 0px;
     margin: 0px;
     background: var(--page-pgcol);
@@ -21,46 +26,58 @@ body {
 body:after {
     content: "Made by Chrigi";
     position: fixed;
-    left: 0;
+    right: 10px;
     bottom: 0;
     width: 100%;
     padding: 10px;
     color: #919191;
     font-size: 10pt;
+    text-align: right;
 }
 
-/*
+
 div {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-}
-*/
 
-#fb-like {
-    width: 10px;
-    
 }
+
 
 #tabs {
-    padding-bottom: 20px;
+
+    z-index: 100;
+    margin-left: -10px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    font-size: 20pt;
+    top: var(--ul-height);
+    padding-bottom: 10px;
     display: grid;
     width: 100%;
-    grid-template-columns: 200px 200px 1fr;
+    grid-template-columns: var(--tab-fwid) var(--tab-fwid) 1fr;
 }
 
-#tab {
-    margin-left: -5px;
+.tab {
+    position: relative;
+    margin-left: -20px;
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 40px;
     background-color: var(--tab-bgcol);
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 25px;
     border-style: solid;
     border-color: var(--title-col);
+    border-width: 8px
+}
+
+#curr_tab {
+    background-color: rgb(91, 153, 239);
+}
+
+#last_tab {
+    margin-right: -100px;
 }
 
 h1 {    
-    padding: 10px;
+    padding: 20px;
+    padding-left: 50px;
     margin: 0px;
     color: var(--title-col);
     font-size: 48pt;
@@ -69,7 +86,10 @@ h1 {
 }
 
 #underlh1 {
-    height: 10px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    height: var(--ul-height);;
     background-color: var(--title-col);
 }
 
@@ -81,6 +101,7 @@ img {
     margin: 50px;
 }
 
+/*
 a {
     color: rgb(28, 33, 104);
     display: inline-block;
@@ -89,4 +110,5 @@ a {
     text-decoration: none;
     vertical-align: bottom;
 }
+*/
   
